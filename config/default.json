@@ -1,0 +1,4 @@
+{
+    "mongoURI":
+      "mongodb+srv://gjs5758:guardianangel1@cluster0.p2ion.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
