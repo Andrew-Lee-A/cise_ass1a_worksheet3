@@ -4,8 +4,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "app": "nodemon app.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix my-book-app npm run build --prefix my-book-app",
+    "build": "cd my-book-app && npm run build",
+    "install-my-book-app": "cd my-book-app && npm install",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install-my-book-app && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
