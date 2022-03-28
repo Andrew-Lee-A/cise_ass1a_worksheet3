@@ -35,6 +35,6 @@ if (process.env.NODE_ENV === 'production'){
     app.get('/', (req, res) => {res.send("Api Running -  Dev Build")});
 }
 
-const port = process.env.PORT;
+const port = process.env.PORT || 8082;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));

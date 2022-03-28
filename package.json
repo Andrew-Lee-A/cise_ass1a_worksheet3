@@ -6,7 +6,7 @@
     "start": "node app.js",
     "build": "cd my-book-app && npm run build",
     "install-my-book-app": "cd my-book-app && npm install",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install-my-book-app && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install-my-book-app && npm install react-scripts && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
